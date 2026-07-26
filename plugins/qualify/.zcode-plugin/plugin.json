@@ -8,17 +8,19 @@
   "license": "MIT",
   "skills": "skills",
   "commands": "commands",
-  "hooks": "hooks/hooks.json",
   "userConfig": {
     "workspace_dir": {
       "type": "string",
-      "default": "workspace",
-      "description": "工作产物根目录(相对项目根)。定性表/规矩库/定量产物/评审报告都在这下面。默认 workspace。"
+      "title": "工作产物根目录",
+      "description": "工作产物根目录(相对项目根)。定性表/规矩库/定量产物/评审报告都在这下面。默认 workspace。",
+      "default": "workspace"
     },
     "default_model_tier": {
       "type": "string",
-      "default": "high",
-      "description": "定量/评审默认用的模型档位(high=高级模型,不吝啬)。"
+      "title": "默认模型档位",
+      "description": "定量/评审默认用的模型档位(high=高级模型,不吝啬)。",
+      "default": "high"
     }
   }
 }
+
