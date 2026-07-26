@@ -1,0 +1,10 @@
+{
+  "lark": {
+    "targetType": "user",
+    "targetId": "填你的 open_id(ou_xxx)",
+    "larkCliPath": "lark-cli"
+  },
+  "sync": {
+    "taskMap": {}
+  }
+}

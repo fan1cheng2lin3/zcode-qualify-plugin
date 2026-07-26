@@ -1,0 +1,48 @@
+{
+  "_comment": "{定量层从定性填空表槽4渲染。这是 tasks.json 骨架,字段固定。}",
+  "version": "1.0",
+  "project": "{项目名}",
+  "phase": "{X}",
+  "phase_title": "{槽1 What}",
+  "depends_on_phases": [],
+  "source_paths": {
+    "phase_doc": "docs/phases/phase-{X}.md",
+    "review_doc": "docs/reviews/phase-{X}-review.md",
+    "constraints_injected": ["{规矩编号列表}"]
+  },
+  "updated_at": "{ISO 时间}",
+  "global_rules": {
+    "_comment": "{从规矩库注入的相关规矩 + 项目档案的技术栈规则}",
+    "max_lines_per_file": 500,
+    "framework": "{项目档案的技术栈}",
+    "test_required": true,
+    "strictly_forbidden_paths": ["{槽2 只读路径}"],
+    "forbidden_actions": ["{项目级 + 槽2 派生}"]
+  },
+  "status_enum": ["pending", "in_progress", "completed", "blocked", "failed", "needs_human"],
+  "stats": {
+    "total": 0,
+    "pending": 0,
+    "in_progress": 0,
+    "completed": 0,
+    "blocked": 0,
+    "failed": 0,
+    "needs_human": 0
+  },
+  "tasks": [
+    {
+      "id": "{X}1",
+      "module": "{槽4 模块名}",
+      "priority": 1,
+      "status": "pending",
+      "assigned_at": null,
+      "dependencies": [],
+      "problem": "{槽4 该任务要解决的问题}",
+      "old_references": ["{参考文件}"],
+      "new_targets": ["{目标文件}"],
+      "acceptance_criteria": ["{槽5 完成条件,按任务关联}"],
+      "improvements": ["{改进点}"],
+      "notes": "{备注}"
+    }
+  ]
+}

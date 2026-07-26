@@ -1,0 +1,24 @@
+{
+  "name": "qualify",
+  "version": "0.1.0",
+  "description": "定性→定量→评审 全栈 AI 开发流程插件。防腐化:状态在文件里,不在上下文里。",
+  "author": {
+    "name": "InfirunCommerce"
+  },
+  "license": "MIT",
+  "skills": "skills",
+  "commands": "commands",
+  "hooks": "hooks/hooks.json",
+  "userConfig": {
+    "workspace_dir": {
+      "type": "string",
+      "default": "workspace",
+      "description": "工作产物根目录(相对项目根)。定性表/规矩库/定量产物/评审报告都在这下面。默认 workspace。"
+    },
+    "default_model_tier": {
+      "type": "string",
+      "default": "high",
+      "description": "定量/评审默认用的模型档位(high=高级模型,不吝啬)。"
+    }
+  }
+}

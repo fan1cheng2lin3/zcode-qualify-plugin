@@ -1,0 +1,13 @@
+# 本地飞书通知配置(含真实 open_id,绝不能进 git)
+hooks/notify.local.json
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 日志
+*.log
