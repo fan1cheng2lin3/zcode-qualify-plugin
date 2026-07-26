@@ -20,7 +20,9 @@
 | 评审 | `/review <phase>` | 对照完成条件生成评审报告(读 git diff,不读对话) |
 | 自动 | `/auto-run [-n]` | 自动扫描所有未完成 phase 串行跑完(夜间模式 `-n`) |
 
-**辅助命令**:`/init`(初始化 workspace)、`/constraints`(规矩库管理)。
+**辅助命令**:`/qualify-init`(初始化 workspace)、`/constraints`(规矩库管理)。
+
+> ⚠️ **注意**:初始化命令是 `/qualify-init`,不是 `/init`。`/init` 是 ZCode 内置命令(生成 AGENTS.md),与插件无关。插件命令改名以避免冲突。
 
 ---
 
@@ -72,7 +74,7 @@ git clone <仓库地址>
 
 ### 场景 A:复杂模块,走完整流程
 ```
-/init                    # 首次:初始化 workspace 结构
+/qualify-init            # 首次:初始化 workspace 结构
 /qualify 做一个订单系统   # 定性(发散+收敛,产出 phase-A.md)
 /quantify A              # 定量(产出 tasks.json + goal.md)
 /run-goal A              # 执行(派子代理跑任务)
