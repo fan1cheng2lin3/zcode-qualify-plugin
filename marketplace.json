@@ -1,11 +1,10 @@
 {
   "name": "qualify-suite",
   "description": "定性→定量→评审 全栈 AI 开发流程插件。防腐化:状态在文件里,不在上下文里。",
-  "pluginRoot": "plugins",
   "plugins": [
     {
       "name": "qualify",
-      "source": "./qualify",
+      "source": "./plugins/qualify",
       "description": "定性→定量→评审→auto-run 全栈开发流程。适用于复杂模块(聚合根/跨模块协作/涉钱逻辑),简单模块请跳过直接写代码。",
       "version": "0.1.0",
       "category": "workflow",
